@@ -1,49 +1,7 @@
 <template>
   <div class="home">
-    <h1 class="text-center mt-10">Product Catalog</h1>
-    <v-container class="mt-10 mb-10">
-      <v-row>
-        <v-col
-          cols="12"
-          md="6"
-          lg="4"
-          v-for="(product, i) in parsedProducts"
-          :key="i"
-          class="text-center"
-        >
-          <v-card class="mx-auto" max-width="344">
-            <v-img :src="product.pic" height="200px"></v-img>
-            <v-card-title>
-              {{ product.title }}
-            </v-card-title>
-            <v-card-subtitle class="text-left">
-              {{ product.subtitle }}
-            </v-card-subtitle>
-
-            <div class="d-flex justify-end">
-              <v-btn
-                color="red"
-                text
-                @click="$router.push(`/details/${product.id}`)"
-              >
-                Show More
-              </v-btn>
-            </div>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
+    <div class="d-flex justify-center mt-5 mb-5">
+      <h1>Main Page for product cards</h1>
+    </div>
   </div>
 </template>
-
-<script>
-// @ is an alias to /src
-import { products } from '@/assets/exercise'
-
-export default {
-  name: 'Home',
-  data: () => ({
-    parsedProducts: JSON.parse(products.value).products,
-  }),
-}
-</script>
