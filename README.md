@@ -46,7 +46,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/)
      * Small screens - 1 card in a row
    * **Do not display the data statically, don't repeat your code!**
 
-## Details View
+### Details View
 1. When the 'Show More' button of a product is clicked on the Home view, the user should be redirected to the Details page, where all the information of the product is displayed
    * Use a routing with path-params or query-params (up to you)
    * When the 'Show More' button is clicked the id of the clicked product is passed to the details url
@@ -54,7 +54,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/)
      * The height of the image in the big card should be 400 px
    * Don't forget to update the routing file
 
-## Extra - One step further
+### Extra - One step further
 * Component based approach
   * Create a card component, which then you reuse in the Home and Details View
     * You should be able to pass the following data to the card component:
