@@ -60,5 +60,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/)
     * You should be able to pass the following data to the card component:
       * The data of the product(s)
       * The height of the image
+      * The maximum width of the image
     * The button and the product description should be optional in the component (hint: slots) 
    
