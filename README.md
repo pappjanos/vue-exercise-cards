@@ -34,7 +34,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/)
 
 ### Home View
 1. The products object should be imported and its value property should be transformed in order to use it (as it is stringified right now)
-2. The Home View should display every producst in cards found in the **assets/exercise.js** file
+2. The Home View should display every product on cards found in the **assets/exercise.js** file
    * The cards should display the images, titles and subtitles of each product (image on top, under it the title and subtitle)
    * The height of the images should be 200px
    * A button should be in the down-right corner of each cards with the text - 'Show More'
@@ -59,5 +59,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/)
     * You should be able to pass the following data to the card component:
       * The data of the product(s)
       * The height of the image
-    * The button and the product description should be optional in the component(hint: slots) 
+    * The button and the product description should be optional in the component (hint: slots) 
    
