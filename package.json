@@ -1,7 +1,9 @@
 {
-  "name": "cards-project",
+  "name": "vue-cards-project",
   "version": "0.1.0",
   "private": true,
+  "author": "tamastakacs91 <tamas.takacs91@gmail.com>",
+  "description": "Getting to know Vue, Vuetify, Vue directives.",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
