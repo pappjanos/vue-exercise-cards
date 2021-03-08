@@ -37,6 +37,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/)
 2. The Home View should display every product on cards found in the **assets/exercise.js** file
    * The cards should display the images, titles and subtitles of each product (image on top, under it the title and subtitle)
    * The height of the images should be 200px
+   * The maximum width of the images should be 344px
    * A button should be in the down-right corner of each cards with the text - 'Show More'
      * The button's background should be transparent, the color of the button text should be red
    * The cards should be responsive
