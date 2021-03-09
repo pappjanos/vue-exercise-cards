@@ -1,4 +1,5 @@
 # Vue Exercise - Cards
+A VueJS 2 exercise where you can practice the usage of Vuetify for styling, apply Vue directives and get familiar with a component based approach.
 
 ## Project setup
 ```
