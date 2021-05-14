@@ -10,7 +10,7 @@ const register = (Vue) => (path) => {
   Vue.component(name(path), component(path))
 }
 
-const components = ['product-card']
+const components = ['product-card', 'joke-of-the-day']
 components.forEach(register(Vue))
 
 Vue.config.productionTip = false
