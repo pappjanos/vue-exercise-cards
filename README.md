@@ -68,5 +68,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/)
 * Create a new page called Joke
   * Place an icon in the navbar, if the user clicks on the icon, the user should be redirected to the Joke page
 * When the user visits the Joke page a random joke should be displayed (each time the page is refreshed a random joke should appear)
-  * for querying the jokes use, for example, the [Chuck Norris API] (https://api.chucknorris.io/)
+  * for querying the jokes use, for example, the [Chuck Norris API](https://api.chucknorris.io/)
    
