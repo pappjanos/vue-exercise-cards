@@ -67,6 +67,15 @@ See [Configuration Reference](https://cli.vuejs.org/config/)
 ### Joke View
 * Create a new page called Joke
   * Place an icon in the navbar, if the user clicks on the icon, the user should be redirected to the Joke page
+
+## Random joke on page load
 * When the user visits the Joke page a random joke should be displayed (each time the page is refreshed a random joke should appear)
   * for querying the jokes use, for example, the [Chuck Norris API](https://api.chucknorris.io/)
+  * display the joke and the icon that is given back in the request
+
+## Search for a joke
+* Create a card on the Joke page with an input field
+* Create a button in the bottom-right corner of the card, called 'Make me laugh'
+  * If, after input, the users presses Enter or clicks on the 'Make me laugh' button an API call should be made with the search parameters
+    * Display the found joke, or display some message if no joke is found
    
