@@ -33,7 +33,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/)
 
 ### In the exercise, use Vuetify for styling (grid system, UI elements - e.g. cards, buttons, etc.)
 
-### Home View
+## Home View
 1. The products object should be imported and its value property should be transformed in order to use it (as it is stringified right now)
 2. The Home View should display every product on cards found in the **assets/exercise.js** file
    * The cards should display the images, titles and subtitles of each product (image on top, under it the title and subtitle)
@@ -47,7 +47,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/)
      * Small screens - 1 card in a row
    * **Do not display the data statically, don't repeat your code!**
 
-### Details View
+## Details View
 1. When the 'Show More' button of a product is clicked on the Home view, the user should be redirected to the Details page, where all the information of the product is displayed
    * Use a routing with path-params or query-params (up to you)
    * When the 'Show More' button is clicked the id of the clicked product is passed to the details url
@@ -64,16 +64,16 @@ See [Configuration Reference](https://cli.vuejs.org/config/)
       * The maximum width of the image
     * The button and the product description should be optional in the component (hint: slots) 
 
-### Joke View
+## Joke View
 * Create a new page called Joke
   * Place an icon in the navbar, if the user clicks on the icon, the user should be redirected to the Joke page
 
-## Random joke on page load
+### Random joke on page load
 * When the user visits the Joke page a random joke should be displayed (each time the page is refreshed a random joke should appear)
   * for querying the jokes use, for example, the [Chuck Norris API](https://api.chucknorris.io/)
   * display the joke and the icon that is given back in the request
 
-## Search for a joke
+### Search for a joke
 * Create a card on the Joke page with an input field
 * Create a button in the bottom-right corner of the card, called 'Make me laugh'
   * If, after input, the users presses Enter or clicks on the 'Make me laugh' button an API call should be made with the search parameters
