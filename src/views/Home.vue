@@ -1,7 +1,25 @@
 <template>
-  <div class="home">
-    <div class="d-flex justify-center mt-5 mb-5">
-      <h1>Main Page for product cards</h1>
-    </div>
-  </div>
+	<div class="home">
+		<h1>Product catalog</h1>
+		<ProductList :products="products" />
+	</div>
 </template>
+
+<script>
+	import ProductList from '../components/ProductList'
+	export default {
+		name: 'Home',
+		props: {
+			products: Array,
+		},
+		components: {
+			ProductList,
+		},
+	}
+</script>
+
+<style scoped>
+	.home {
+		text-align: center;
+	}
+</style>

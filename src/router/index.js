@@ -17,6 +17,28 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import('../views/About.vue'),
   },
+  {
+    path: '/products/:id',
+    name: 'ProductDetails',
+    component: () => import('../views/ProductDetails.vue'),
+    props: true
+  },
+  {
+    path: '/joke',
+    name: 'Joke',
+    component: () => import('../views/Joke.vue'),
+  },
+  //redirect
+  {
+    path: '/products',
+    redirect: '/'
+  },
+  // catch all 404
+  {
+    path: '/:catchAll(.*)',
+    name: 'NotFound',
+    component: () => import('../views/NotFound.vue'),
+  }
 ]
 
 const router = new VueRouter({
