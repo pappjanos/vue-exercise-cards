@@ -7,13 +7,19 @@
 
 <script>
 	import ProductList from '../components/ProductList'
+	import { products } from '../assets/exercise'
+
 	export default {
 		name: 'Home',
-		props: {
-			products: Array,
-		},
+
+		data: () => ({
+			products: [],
+		}),
 		components: {
 			ProductList,
+		},
+		created() {
+			this.products = JSON.parse(products.value).products
 		},
 	}
 </script>

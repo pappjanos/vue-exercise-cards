@@ -8,18 +8,20 @@
 
 <script>
 	import Product from '../components/Product.vue'
+	import { products } from '../assets/exercise'
+
 	export default {
 		name: 'ProductDetails',
 		data: () => ({
 			product: Object,
 		}),
-		props: ['id', 'products'],
+		props: ['id'],
 
 		components: {
 			Product,
 		},
 		created() {
-			this.product = this.products.filter(
+			this.product = JSON.parse(products.value).products.filter(
 				(el) => el.id === parseInt(this.$route.params.id)
 			)[0]
 		},
