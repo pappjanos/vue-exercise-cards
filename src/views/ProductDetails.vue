@@ -1,29 +1,27 @@
 <template>
 	<div class="product-details">
-		<Product :product="product" maxwidth="800px" height="400px">
-			<template v-slot:description> {{ product.description }} </template>
+		<Product :product="actualProduct" maxwidth="800px" height="400px">
+			<template v-slot:description> {{ actualProduct.description }} </template>
 		</Product>
 	</div>
 </template>
 
 <script>
 	import Product from '../components/Product.vue'
-	import { products } from '../assets/exercise'
+	import { mapActions, mapGetters } from 'vuex'
 
 	export default {
 		name: 'ProductDetails',
-		data: () => ({
-			product: Object,
-		}),
 		props: ['id'],
-
+		computed: mapGetters(['actualProduct']),
 		components: {
 			Product,
 		},
+		methods: {
+			...mapActions(['getActualProduct']),
+		},
 		created() {
-			this.product = JSON.parse(products.value).products.filter(
-				(el) => el.id === parseInt(this.$route.params.id)
-			)[0]
+			this.getActualProduct(this.$route.params.id)
 		},
 	}
 </script>

@@ -29,43 +29,25 @@
 </template>
 
 <script>
-	import axios from 'axios'
+	import { mapGetters, mapActions } from 'vuex'
+
 	export default {
 		name: 'Joke',
 		data: () => ({
-			joke: Object,
 			searchText: '',
 		}),
+		computed: mapGetters(['joke']),
 		methods: {
+			...mapActions(['fetchJoke', 'searchJoke']),
 			onSubmit() {
 				if (this.searchText) {
-					axios
-						.get(
-							`https://api.chucknorris.io/jokes/search?query=${this.searchText}`
-						)
-						.then((response) => {
-							if (response.data.total === 0) {
-								this.joke.value = 'There is no any joke with this word'
-							} else {
-								this.joke = response.data.result[0]
-							}
-						})
-						.catch((e) => {
-							this.errors.push(e)
-						})
+					this.searchJoke(this.searchText)
 					this.searchText = ''
 				}
 			},
 		},
 		created() {
-			axios
-				.get(`https://api.chucknorris.io/jokes/random`)
-				.then((response) => {
-					this.joke = response.data
-				})
-				.catch((e) => {
-					this.errors.push(e)
-				})
+			this.fetchJoke()
 		},
 	}
 </script>
